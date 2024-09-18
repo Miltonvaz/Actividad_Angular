@@ -1,0 +1,38 @@
+<mat-accordion class="example-headers-align">
+
+  <mat-expansion-panel [expanded]="step() === 0" (opened)="setStep(0)" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Personal Data </mat-panel-title>
+      <mat-panel-description>
+        Type your personal details
+        <mat-icon>account_circle</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <form [formGroup]="form">
+      <mat-form-field appearance="fill">
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="firstName" placeholder="First Name" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastName" placeholder="Last Name" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Age</mat-label>
+        <input matInput formControlName="age" type="number" min="1" placeholder="Age" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Subjects</mat-label>
+        <input matInput formControlName="asignatures" placeholder="Subjects (comma separated)" />
+      </mat-form-field>
+
+      <mat-action-row>
+        <button mat-button (click)="submitForm()">Submit</button>
+      </mat-action-row>
+    </form>
+  </mat-expansion-panel>
+</mat-accordion>

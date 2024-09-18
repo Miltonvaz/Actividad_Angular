@@ -1,0 +1,36 @@
+<div class="grid-container">
+  <div *ngFor="let student of students">
+    <mat-card class="dashboard-card" appearance="outlined">
+  
+      <div class="mostrar-elementos">
+        <h6 class="detalles-h6">Detalles</h6>
+        <div class="detalle-item">
+          <strong class="detalle-item-strong">Nombre:</strong>
+          <div class="detalle-item-div">{{ student.name }}</div>
+        </div>
+        <div class="detalle-item">
+          <strong class="detalle-item-strong">Id:</strong>
+          <div class="detalle-item-div">{{ student.id }}</div>
+        </div>
+        <div class="detalle-item">
+          <strong class="detalle-item-strong">Edad:</strong>
+          <div class="detalle-item-div">{{ student.age }}</div>
+        </div>
+        <div class="detalle-item">
+          <strong class="detalle-item-strong">Asignaturas:</strong>
+          <div class="detalle-item-div">{{ student.asignatures.join(', ') }}</div>
+        </div>
+        </div>
+        <div class="botton">
+          <button mat-button (click)="deleteStudent(student.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+     
+    </mat-card>
+  </div>
+
+
+</div>
+<expansion-steps></expansion-steps>
+

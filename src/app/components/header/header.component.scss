@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+h1{
+    color:white;
+    font-size: 45px;
+}
+ul li{
+    display: inline-block ;
+    padding: 0px 100px;
+    margin-left: 850px;
+}
+a{
+    color: white;
+    text-decoration: nonef;
+}
+a :hover{
+    color: aqua;
+}
+app-menu{
+    display: flex;
+    margin-right: 30px;
+}

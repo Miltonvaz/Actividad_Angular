@@ -1,0 +1,77 @@
+.grid-container {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-card {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  max-width: 240px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.mostrar-elementos{
+  margin: 20px;
+}
+.botton{
+  margin-right: 15px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.05);
+}
+
+.dashboard-card-content {
+  text-align: center;
+  padding: 16px;
+}
+
+.additional-content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dashboard-card.expanded .additional-content {
+  opacity: 1;
+}
+
+.more-button {
+  position: relative;
+  margin-top: 10px;
+}
+
+.detalle-item {
+  margin: 5px 0;
+}
+
+.detalle-item-strong {
+  font-weight: bold;
+  color: #555;
+}
+
+.detalle-item-div {
+  color: #333;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 10px; 
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ff0000;
+}
